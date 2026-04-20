@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Creative Studio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <h1 class="fade">Creative Digital Studio</h1>
+    <p class="fade">We build modern interactive websites for games 2D</p>
+</section>
+
+<!-- 3D CARD -->
+<section class="cards">
+<div class="card">
+   <h2>Pixel Art</h2>
+   <p>Retro style assets</p>
+</div>
+
+<div class="card">
+   <h2>Gamification</h2>
+   <p>Fun interactive UI</p>
+</div>
+</section>
+
+<!-- POSTER PROJECT -->
+<section class="poster">
+    <h2>Game Poster Project</h2>
+    <img src="asset/Poster-Game.jpeg" class="poster-img" onclick="openLightbox()">
+</section>
+<section class="story">
+    <h2>Game Story</h2>
+
+    <p class="story-text">
+        In a forgotten pixel kingdom, the world has lost its light. 
+        Monsters scattered across the land hold energy. 
+        As a young wizard, your mission is to defeat these monsters and restore balance to the kingdom before 
+        darkness and yourself are taken over.
+    </p>
+</section>
+
+<!-- LIGHTBOX (HIDDEN FIRST) -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img src="asset/Poster Game.jpeg">
+</div>
+
+<!-- MINI GAME -->
+<section class="game">
+    <h2>Mini Game 🎮</h2>
+    <p>Klik koin sebanyak mungkin!</p>
+
+    <div class="score-box">
+        Score: <span id="score">0</span>
+    </div>
+
+    <div class="coin" onclick="addScore()">🪙</div>
+
+    <button class="reset-btn" onclick="resetGame()">Reset Score</button>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
